@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.2/jquery-ui.min.js"></script>
+    <script src="js/libs/jmyloader-full.min.js"></script>
+    <script src="js/libs/jQuery.jPlayer.2.5.0/jquery.jplayer.min.js"></script>
+    <script src="js/libs/cofplayer.js"></script>
+    <script src="js/libs/cofda.js"></script>
+    <script src="js/libs/jhearnclick.js"></script>
+    <script src="js/jmylottery.min.js"></script>
+    <script>
+        $(function(){
+            $('.jmylottery').jMyLottery({
+                answers : {
+                    "123-456-789" : "123-456-780",
+                    "223-456-789" : "223-456-780",
+                    "323-456-789" : "323-456-780",
+                    "423-456-789" : "423-456-780",
+                    "523-456-789" : "523-456-780"
+                }
+            });
+        });
+    </script>
+    <link type="text/css" rel="stylesheet" href="css/libs/jmyloader.css" media="all" />
+    <link type="text/css" rel="stylesheet" href="css/jmylottery.css" media="all" />
+    <style>
+        h1 {
+            font-size: 21px;
+        }
+        .align-center {
+            width: 602px;
+            margin: auto;
+            font-family: verdana, arial, helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+<div class="align-center">
+    <h1>Learn how to count in French</h1>
+    <p>Listen to the numbers in blue, and click on the appropriate digit below</p>
+</div>
+<div class="cofda jmylottery">
+    <div class="sounds clearfix">
+        <div class="sound" id="123-456-789">
+            <a href="http://webserver.local/activities/jhearnclick/mp3/1.mp3" class="linkSong">Un</a>
+        </div>
+        <div class="sound" id="223-456-789">
+            <a href="http://webserver.local/activities/jhearnclick/mp3/2.mp3" class="linkSong">Deux</a>
+        </div>
+        <div class="sound" id="323-456-789">
+            <a href="http://webserver.local/activities/jhearnclick/mp3/3.mp3" class="linkSong">Trois</a>
+        </div>
+        <div class="sound" id="423-456-789">
+            <a href="http://webserver.local/activities/jhearnclick/mp3/4.mp3" class="linkSong">Quatre</a>
+        </div>
+        <div class="sound" id="523-456-789">
+            <a href="http://webserver.local/activities/jhearnclick/mp3/5.mp3" class="linkSong">Cinq</a>
+        </div>
+        <div class="progress">
+            <span class="current"></span> / <span class="total"></span>
+        </div>
+    </div>
+    <div class="matches">
+        <table cellpadding="0" cellspacing="0">
+            <tr>
+                <td>&nbsp;</td>
+                <td>
+                    <div class="match" id="323-456-780">
+                        <a href="#" class="number-digit">3</a>
+                    </div>
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>
+                    <div class="match" id="223-456-780">
+                        <a href="#" class="number-digit">2</a>
+                    </div>
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>
+                    <div class="match" id="523-456-780">
+                        <a href="#" class="number-digit">5</a>
+                    </div>
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>
+                    <div class="match" id="123-456-780">
+                        <a href="#" class="number-digit">1</a>
+                    </div>
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>
+                    <div class="match" id="423-456-780">
+                        <a href="#" class="number-digit">4</a>
+                    </div>
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+        </table>
+
+    </div>
+    <div class="help"></div>
+    <div class="actions">
+        <a href="#" class="button reset" disabled="disabled">Reset</a>
+    </div>
+</div>
+</body>
+</html>
