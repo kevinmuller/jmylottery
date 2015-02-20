@@ -47,8 +47,8 @@ module.exports = function(grunt) {
       dist_full: {
         src: [
           'js/libs/*.js',
-          'src/js/*.js',
-          '!js/libs/jmyloader-full-min.js'
+          '!js/libs/jmyloader-full.min.js',
+          'src/js/*.js'
         ],
         dest: 'js/jmylottery-withlibs.js'
       },

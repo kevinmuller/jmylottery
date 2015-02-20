@@ -72,6 +72,9 @@
   border: 1px solid #ccc;
   font-family: verdana, arial, helvetica, sans-serif;
   position: relative;
+  line-height: normal;
+  font-size: 14px;
+  margin-bottom: 68px;
   /* Custom css for layout */
 }
 .jmylottery .help {
@@ -84,6 +87,7 @@
   color: #636363;
   padding: 10px;
   margin: 0;
+  line-height: normal;
 }
 .jmylottery .help p.green {
   color: green;
@@ -105,6 +109,8 @@
   padding: 10px;
   background-color: #eee;
   float: left;
+  line-height: normal;
+  font-size: 16px;
   margin-right: 10px;
   text-decoration: none;
   color: #636363;
@@ -185,6 +191,7 @@
 .jmylottery table tr td {
   border: 1px solid #ccc;
   width: 10%;
+  padding: 0;
 }
 .jmylottery .actions {
   margin: 0 0 -48px 0;
