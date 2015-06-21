@@ -265,7 +265,10 @@ jHearNClick.prototype.goToNextSound = function() {
     $('.progress .current', this.app).text(this.progress);
   }
   else {
-    this.onFinish();
+    // Callback.
+    if (this.settings.onFinish && jQuery.isFunction(this.settings.onFinish)) {
+      this.settings.onFinish();
+    }
   }
 };
 
