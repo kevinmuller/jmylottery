@@ -116,9 +116,9 @@ jHearNClick.prototype.init = function() {
 
   // Hide inactive sound.
   if (this.settings.showActiveSoundOnly) {
-    $(this.settings.mediaSelector).hide();
-    $(this.settings.mediaSelector + ':first').show();
-    $(this.settings.mediaSelector + ':first').addClass(this.settings.activeClass);
+    $(this.settings.mediaSelector, this.app).hide();
+    $(this.settings.mediaSelector + ':first', this.app).show();
+    $(this.settings.mediaSelector + ':first', this.app).addClass(this.settings.activeClass);
   }
 
   // init progress bar.
